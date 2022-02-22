@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      div {
+        height: 200px;
+        width: 200px;
+        font-size: 25px;
+        position: absolute;
+      }
+      .one {
+        background: orange;
+        z-index: 1000;
+      }
+      .two {
+        background: #c3ee40;
+        top: 40px;
+        left: 40px;
+        z-index: 1;
+      }
+      .three {
+        background: rgb(201, 121, 201);
+        top: 80px;
+        left: 80px;
+        z-index: 1001;
+      }
+      .four {
+        background: skyblue;
+        top: 120px;
+        left: 120px;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav> -->
+    <div class="one">1</div>
+    <div class="two">2</div>
+    <div class="three">3</div>
+    <div class="four">4</div>
+  </body>
+</html>
