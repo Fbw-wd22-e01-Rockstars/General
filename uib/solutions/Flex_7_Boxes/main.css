@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+}
+
+.c0 {
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid red;
+}
+
+.c0 > div {
+  height: 150px;
+}
+
+.c1 {
+  background-color: purple;
+}
+
+.c2 {
+  background-color: blueviolet;
+}
+
+.c3 {
+  background-color: blue;
+}
+
+.c4 {
+  background-color: green;
+}
+
+.c5 {
+  background-color: yellow;
+}
+
+.c6 {
+  background-color: darkorange;
+}
+
+.c7 {
+  background-color: red;
+}
+
+@media screen and (max-width: 600px) {
+  .c1,
+  .c2,
+  .c3,
+  .c4,
+  .c5,
+  .c6,
+  .c7 {
+    /* flex = [flex-grow] [flex-shrink] [flex-basis] */
+    flex: 1 1 100%;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .c1,
+  .c2 {
+    flex: 1 1 100%;
+  }
+
+  .c3,
+  .c4,
+  .c5 {
+    flex: 1 1 33.33%;
+  }
+
+  .c6,
+  .c7 {
+    flex: 1 1 100%;
+  }
+}
+
+@media screen and (min-width: 801px) {
+  .c1,
+  .c2 {
+    flex: 1 1 50%;
+  }
+
+  .c3,
+  .c4,
+  .c5 {
+    flex: 1 1 33.33%;
+  }
+
+  .c6,
+  .c7 {
+    flex: 1 1 50%;
+  }
+}
+    
